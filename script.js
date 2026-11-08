@@ -111,7 +111,7 @@ function saveFlashcard() {
 function importFlashcard() {
 
     // Récupère le fichier sélectionné par l'utilisateur
-    let file = prompt("Enter flashcard file name : ")
+    let file = document.getElementById("importFile").files[0];
 
     // Vérifie qu'un fichier a bien été sélectionné
     if (!file) return;
