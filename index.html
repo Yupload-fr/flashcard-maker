@@ -26,8 +26,13 @@
         <p>
         <button onclick="saveFlashcard()" id="Savebtn">Save</button>
         <button onclick="makecard()" id="Submitbtn">Submit</button>
-        <button onclick="importFlashcard()" id="Importbtn">Import</button>
         </p>
+
+        <div class="container">
+        <input type="file" id="importFile" accept=".txt">
+        <button onclick="importFlashcard()" id="Importbtn">Import</button>
+        </div>
+
     </div>
 
     <!-- Output : questions réponses -->
