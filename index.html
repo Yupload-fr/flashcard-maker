@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", lang="en">
+</head>
+<body>
+    
+    <!-- Titre + instructions (MENU)-->
+
+    <h1 id="Title">CUSTOM FLASHCARDS</h1>
+    <div class="input">
+        <p>text to flashcard (AI recommended)</p>
+        <p>forme : question1 == answer2 ; question2 == answer2 </p>
+        <p>Exporting : make sure user input has your questions and answers
+            else it will make an empty file
+        </p>
+
+        <!-- entrée textuelle -->   
+
+        <input type="text" placeholder="Enter flashcard text" id="makerinput">
+
+        <!-- boutton Terminer (définis variable flashcards) -->   
+
+        <p>
+        <button onclick="saveFlashcard()" id="Exportbtn">Export</button>
+        <button onclick="makecard()" id="Submitbtn">Submit</button>
+        <button onclick="importFlashcard()" id="Savebtn">Save</button>
+        </p>
+    </div>
+
+    <!-- Output : questions réponses -->
+
+    <div class="output" id="output">
+        <button id="display" onclick="nextCard()">Your Questions and Answers Here</button>
+        <button id="closedisplaybtn" onclick="closedisplay()">Back</button>
+    </div>
+    
+
+
+    <!---====================lien script=================== --->
+    <script src="script.js"></script>
+</body>
